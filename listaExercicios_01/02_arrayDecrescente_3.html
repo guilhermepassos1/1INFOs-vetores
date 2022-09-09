@@ -4,11 +4,25 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
-
-
+    const primeiroNumero = parseInt(prompt("informe o primeiro número :"))
+const segundoNumero = parseInt(prompt("informe o segundo número :"))
+const terceiroNumero = parseInt(prompt("informe o terceiro número :"))
+let resultadoNaTela
     //PROCESSAMENTO
-
-
+if (primeiroNumero >= segundoNumero && segundoNumero >= terceiroNumero) (resultadoNaTela =  [terceiroNumero, segundoNumero, primeiroNumero])
+else if (segundoNumero >= primeiroNumero && primeiroNumero >= terceiroNumero) (resultadoNaTela =  [terceiroNumero, primeiroNumero, segundoNumero])
+else if (terceiroNumero >= segundoNumero && segundoNumero >= primeiroNumero) (resultadoNaTela =  [primeiroNumero, segundoNumero, terceiroNumero])
+else if (primeiroNumero >= terceiroNumero && terceiroNumero >= segundoNumero) (resultadoNaTela =  [segundoNumero, terceiroNumero, primeiroNumero])
+else if (terceiroNumero >= primeiroNumero && primeiroNumero >= segundoNumero) (resultadoNaTela =  [segundoNumero, primeiroNumero, terceiroNumero])
+else if (segundoNumero >= primeiroNumero && primeiroNumero >= terceiroNumero) (resultadoNaTela =  [terceiroNumero, primeiroNumero,segundoNumero])
+else (resultadoNaTela =  [terceiroNumero, primeiroNumero,segundoNumero])
     //SAÍDA
+    document.write(resultadoNaTela.join(" - "));
 
+    //1 2 3 feito
+//3 2 1 feito
+//1 3 2 feito 
+//3 1 2  feito
+//2 1 3  feito
+//2 3 1
 </script>
